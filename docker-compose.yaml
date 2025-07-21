@@ -1,6 +1,9 @@
 version: "3"
 networks:
-  expense:
+  default:
+    driver: bridge
+    name: Expense
+    external: true
 volumes:
   mysql:  # docker volume create mysql
 services:
